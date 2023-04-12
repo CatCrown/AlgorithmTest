@@ -27,3 +27,24 @@ class Solution {
         }
 
 }
+//
+//class Solution {
+//
+//    // 일반인들의 해결법
+//    public int solution(String A, String B) {
+//        int answer = 0;
+//        String newWord = A;
+//
+//        for (int i = 0; i < A.length(); i++) {
+//            if (newWord.equals(B)) {
+//                return answer;
+//            }
+//
+//            String end = newWord.substring(newWord.length() - 1); //마지막 글자만을 추출
+//            newWord = end + newWord.substring(0, newWord.length() - 1); // 마지막 문자를 제외한 문자열을 반환
+//            answer++;
+//        }
+//
+//        return -1;
+//    }
+//}
