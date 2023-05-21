@@ -1,4 +1,7 @@
 package Level0.정사각형으로만들기;
+
+import java.util.Arrays;
+
 public class Square {
     public static void main(String[] args) {
         Solution s = new Solution();
@@ -7,11 +10,11 @@ public class Square {
         int[][] arr2 = {{1, 2},{3, 4}};
         int[][] arr3 = {{1,2,3}};
         int[][] arr4 = {{1},{1}};
-        System.out.println(s.solution(arr));
-        System.out.println(s.solution(arr1));
-        System.out.println(s.solution(arr2));
-        System.out.println(s.solution(arr3));
-        System.out.println(s.solution(arr4));
+        System.out.println(Arrays.deepToString(s.solution(arr)));
+        System.out.println(Arrays.deepToString(s.solution(arr1)));
+        System.out.println(Arrays.deepToString(s.solution(arr2)));
+        System.out.println(Arrays.deepToString(s.solution(arr3)));
+        System.out.println(Arrays.deepToString(s.solution(arr4)));
     }
 }
 class Solution {
@@ -25,8 +28,8 @@ class Solution {
             for(int y=0;y<arr[0].length;y++){
                 answer[x][y]=arr[x][y];
             }
-
         }
+
         return answer;
     }
 }
